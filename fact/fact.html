@@ -6,10 +6,11 @@
   <link rel="stylesheet" type="text/css" href="fact.css">
 </head>
 <body>
-  <script src="fact.js"></script>
+
 
   <h1>JS Demo Page</h1>
   <h2>Factorial table</h2>
+  <p id="today">DATE</p>
 
   <form id ="inform">
     Enter an upper bound for the factorial table:<br>
@@ -17,13 +18,15 @@
   </form>
 
   <br>
-  <button id="run_button"
-          onclick="factTable(inform)">Run</button>
+<!--  <button id="run_button" onclick="factTable(inform)">Run</button>-->
+<!--  shorten the above with an 'even listener' in fact.js-->
+  <button id="run_button">Run</button>
 
   <br><br>
   The factorial table:<br>
   <p id="textout"></p>
   <br>
 
+  <script src="fact.js"></script>
 </body>
 </html>

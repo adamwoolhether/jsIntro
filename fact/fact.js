@@ -1,3 +1,5 @@
+document.getElementById("today").innerHTML = new Date();
+document.getElementById("run_button").addEventListener("click",() => factTable(inform));
 function factTable(formId) {
     // Get limit value.
     var limit = formId.textin.value;
