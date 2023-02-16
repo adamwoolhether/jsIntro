@@ -1,17 +1,17 @@
 function factTable(formId) {
     // Get limit value.
-    let limit = formId.textin.value;
+    var limit = formId.textin.value;
 
     // Validate the input number.
-    let result;
+    var result;
     if (limit >= 1) {
-        let val = 1;
-        let fact = 1;
-        let index = 0;
-        let factTb = [];
+        var val = 1;
+        var fact = 1;
+        var index = 0;
+        var factTb = [];
 
         // Compute values, storing the in an array.
-        for (let count = 1; count <= limit; count++) {
+        for (var count = 1; count <= limit; count++) {
             factTb[index++] = fact;
             fact = fact * ++val;
             if (fact > 999999999999999) {
@@ -20,8 +20,8 @@ function factTable(formId) {
         }
 
         // Build the output string.
-        let result = "<pre>VALUE FACTORIAL\n";
-        for (let i = 0; i < factTb.length; i++) {
+        var result = "<pre>VALUE FACTORIAL\n";
+        for (var i = 0; i < factTb.length; i++) {
             val = i + 1;
             fact = factTb[i];
             result += val + "      " + fact + "\n";
