@@ -1,3 +1,4 @@
+// findLowRow will fund the row whose elements sum up to the lowest amount.
 function findLowRow() {
     let lowSum = 999; // Assuming the rows have sums less than 999.
     let lowRow = 0;
